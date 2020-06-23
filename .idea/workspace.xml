@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ef02bf9d-733b-447a-bc05-f68fc86dd4af" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1djBXhOBekni7OxIlq5nUvzxgYt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ef02bf9d-733b-447a-bc05-f68fc86dd4af" name="Default Changelist" comment="" />
+      <created>1592928662835</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592928662835</updated>
+      <workItem from="1592928663938" duration="9617000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="719" y="232" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592938310816">
+      <screen x="25" y="23" width="1767" height="1097" />
+    </state>
+    <state x="719" y="232" key="#com.intellij.execution.impl.EditConfigurationsDialog/25.23.1767.1097@25.23.1767.1097" timestamp="1592938310816" />
+    <state x="1087" y="324" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592942616719">
+      <screen x="25" y="23" width="1767" height="1097" />
+    </state>
+    <state x="1087" y="324" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/25.23.1767.1097@25.23.1767.1097" timestamp="1592942616719" />
+  </component>
+</project>

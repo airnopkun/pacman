@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacman</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="world"></div>
+    <div id="pacman"></div>
+    <div id="score">0</div>
+
+
+    <script>
+
+    // Variables......
+    let world = [
+        [2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+        [2, 0, 1, 1, 2, 1, 1, 1, 1, 2],
+        [2, 1, 1, 1, 2, 1, 1, 2, 1, 2],
+        [2, 1, 1, 1, 2, 2, 1, 2, 1, 2],
+        [2, 1, 1, 1, 1, 2, 1, 4, 2, 2],
+        [2, 1, 1, 1, 1, 2, 2, 1, 2, 2],
+        [2, 1, 2, 2, 1, 1, 1, 1, 1, 2],
+        [2, 1, 1, 2, 1, 1, 1, 2, 1, 2],
+        [2, 1, 1, 2, 1, 1, 1, 2, 1, 2],
+        [2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+    ];
+    let pacman = {
+        x: 1,
+        y: 1
+    }
+    const pacmanIcon = document.getElementById("pacman")
+    let score = 0;
+
+    //Functions......
+
+    displayWorld = () => {
+        let output = '';
+
+        for(let i=0; i<world.length; i++){
+            output += "<div class='row'>"
+            for(let j=0; j<world[i].length; j++){
+                if(world[i][j] === 2){
+                    output += "<div class='brick'></div>"
+                }
+                else if(world[i][j] === 1){
+                    output += "<div class='coin'></div>"
+                }
+                else if(world[i][j] === 0){
+                    output += "<div class='empty'></div>"
+                }
+                else if(world[i][j] === 4){
+                    output += "<div class='cherry'></div>"
+                }
+            }
+            output += "</div>"
+        }
+        document.getElementById("world").innerHTML = output;
+    }
+
+    displayPacman = () => {
+        pacmanIcon.style.top = pacman.y * 24 + 3 + "px";
+        pacmanIcon.style.left = pacman.x * 24 + 1 + "px";
+    }
+
+    displayScore = () => {
+        document.getElementById("score").innerHTML = score;
+    }
+
+    document.onkeydown = e => {
+        let code = e.code
+        if(code === "ArrowDown"){
+            pacmanIcon.style.transform = "rotate(270deg)";
+            if(world[pacman.y+1][pacman.x] !== 2){
+                pacman.y++;
+            }
+        }
+        else if(code === "ArrowRight") {
+            pacmanIcon.style.transform = "rotate(180deg)";
+            if(world[pacman.y][pacman.x+1] !== 2) {
+                pacman.x++;
+            }
+        }
+        else if(code === "ArrowLeft") {
+            pacmanIcon.style.transform = "rotate(0deg)";
+            if(world[pacman.y][pacman.x-1] !== 2) {
+                pacman.x--;
+            }
+        }
+        else if(code === "ArrowUp") {
+            pacmanIcon.style.transform = "rotate(90deg)";
+            if(world[pacman.y-1][pacman.x] !== 2){
+                pacman.y--;
+            }
+        }
+        if(world[pacman.y][pacman.x] === 1) {
+            world[pacman.y][pacman.x] = 0;
+            score += 10;
+        }
+        if(world[pacman.y][pacman.x] === 4) {
+            world[pacman.y][pacman.x] = 0;
+            score += 50;
+        }
+        displayPacman()
+        displayWorld()
+        displayScore()
+    }
+
+    //Commands......
+
+    displayWorld()
+
+    </script>
+</body>
+</html>
